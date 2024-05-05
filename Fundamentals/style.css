@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f3f7;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 240px;
+    background: #aeb3b8;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    width: calc(100% - 20px);
+    height: 60px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 32px;
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: inset 0 -4px 5px rgba(255, 255, 255, 0.2), inset 0 4px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.keys button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-color: #ff9500;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.keys button:active {
+    background-color: #ffac33;
+}
+
+.keys button.operator {
+    background-color: #d4d4d2;
+    color: black;
+}
+
+.keys button.operator:active {
+    background-color: #ebebeb;
+}
+
+.keys button.double {
+    grid-column: span 2;
+    width: auto;
+    border-radius: 50px;
+}
+
+.keys button.zero {
+    grid-column: span 2;
+    width: auto;
+    border-radius: 50px;
+}
+
+.keys button.clear {
+    background-color: #ff3b30;
+}
+
+.keys button.clear:active {
+    background-color: #ff6251;
+}
